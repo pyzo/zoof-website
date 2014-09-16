@@ -9,9 +9,14 @@ body {
 
 div .splash {
     font-family: 'monospace';
-    font-size: 200%;
+    font-size: 120%;
     font-weight: bold;
     text-align: center;
+}
+
+div .purpose {
+    font-size: 120%;
+    font-style: italic;
 }
 
 
@@ -34,6 +39,9 @@ div .splash {
     font-family: 'monospace';
 }
 
+.navbar-default .navbar-nav>li>a{
+    color: #073642;
+}
 .navbar-default .navbar-nav>li>a:hover{
     color: #268bd2;
 }
@@ -43,4 +51,11 @@ footer {
   background-color: #eee;
   border-color:#ccc;
   color: #666;
+}
+
+footer a, footer a:hover{
+    color: #444;
+}
+footer .pull-right a {
+    color: #268bd2;
 }

@@ -113,8 +113,8 @@ html_theme_options = {
     'navbar_site_name': "Zoof.io",
     'bootswatch_theme': "readable",  # united
     'navbar_links': [
-            ("Documentation", "docs"),
-            ("Github", "http://github.com/zoofIO/zoof", True),
+            ("<i class='fa fa-book'></i> Documentation", "docs"),
+            ("<i class='fa fa-github'></i> Source", "http://github.com/zoofIO/zoof", True),
         ],
     'navbar_sidebarrel': True,  # Next/prev
     'navbar_pagenav': True,  # TOC for *this* page
