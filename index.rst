@@ -48,10 +48,9 @@
     Getting started is easy, since Zoof can take care of installing the
     programming language and additional packages.
     
-    We believe that making (scientific) computing easier accessible is
-    an important step to make science more reproducable, and promotes
-    freedom and independence.
-
+    We believe that making (scientific) computing easier accessible promotes
+    freedom and independence, and is an important step to make science
+    more reproducable.
 
 
 .. raw:: html
@@ -103,7 +102,7 @@ Features
     </div>
     
     <div class="col-md-4 col-sm-6">
-      <h4><i class="fa fa-remove"></i> Cross platform</h4>
+      <h4><i class="fa fa-desktop"></i> Cross platform</h4>
       Zoof is available on Windows, Linux and OS X. Binaries/installers
       are provided for each platform. Zoof also runs on the Raspberry Pi!
     </div>
@@ -124,10 +123,11 @@ Features
     </div>
     
     <div class="col-md-4 col-sm-6">
-      <h4><i class="fa fa-beer"></i> Always free</h4>
-      Zoof is free and always will be. To make Zoof sustainable, we sell the 
-      Zoof Plus edition. The extra features in Plus are of cosmetic nature;
-      the free version has no restrictions in functionality.
+      <h4><i class="fa fa-heart"></i> Always free</h4>
+      We believe that everyone should have access to good tools: Zoof is
+      free and always will be. The extra features in Zoof Plus are of
+      cosmetic nature, the free version has no restrictions in
+      functionality.
     </div>
     
     </div>
