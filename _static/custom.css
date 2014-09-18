@@ -14,25 +14,21 @@ body {
 
 /* ===== SPLASH ===== */
 
-.intro {
+
+.splash {
     background-color: #002b36; /* 002b36 or 073642 */
     margin: 0px;
+    font-size: 120%;
+    color: #fff;
+    padding: 1em;
 }
 
-div .splash {
+.splash .shortest-summary{
     font-family: 'monospace';
-    font-size: 120%;
     font-weight: bold;
     text-align: center;
-    color: #fff;
 }
 
-div .purpose {
-    font-size: 120%;
-    font-styleee: italic;
-    padding: 1em;
-    color: #fff;
-}
 
 .col-md-12{
     min-height:0px; /* avoid whitespace because we have an empty row */

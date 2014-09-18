@@ -6,57 +6,48 @@
 
     </div></div></div>
     
-    <div class='intro'>
+    <div class='splash'>
     
+    <!-- Undo divs that the template prepared -->
     <div class="container">
     <div class="row">
-    <div class="col-md-12">
-
-
-.. container:: splash
-
-    .. image:: _static/zooflogo220.png
-        :align: center
     
-    .. raw:: html
-        
-        <!-- The briefest summary for Zoof -->
-        Zoof - download, run, start coding!
-        <br />
-        <br />
-        
-        <!---
-        <i class="fa fa-download"></i> Download &nbsp;&nbsp;
-        <i class="fa fa-play-circle"></i> Run &nbsp;&nbsp;
-        <i class="fa fa-child"></i> Coding!
-        -->
+    <!-- Maintain compact width -->
+    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+    
+    <center><img src="_static/zooflogo220.png" /></center>
+    
+    <!-- The briefest summary for Zoof -->
+    <div class="shortest-summary">
+    Zoof - download, run, start coding!
+    </div>
+    <br />
+    
+    <!---
+    <i class="fa fa-download"></i> Download &nbsp;&nbsp;
+    <i class="fa fa-play-circle"></i> Run &nbsp;&nbsp;
+    <i class="fa fa-child"></i> Coding!
+    -->
 
-
-.. container:: purpose
+    <!-- The brief summary for Zoof 
+    Zoof is a simple and intuitive IDE that promotes a powerful
+    interactive workflow to use dynamic languages like Python, and helps
+    you get started quickly.
+    -->
     
-    .. The brief summary for Zoof
-        Zoof is a simple and intuitive IDE that promotes a powerful
-        interactive workflow to use dynamic languages like Python, and helps
-        you get started quickly.
-    
-    
-    .. The summary for Zoof
-    
+    <!-- The purpose (long summary) of Zoof -->
     The purpose of Zoof is to lower the barriers for (scientific)
     computing by providing a simple and intuitive IDE that promotes a
     powerful interactive workflow to use dynamic languages like Python.
     Getting started is easy, since Zoof can take care of installing the
     programming language and additional packages.
-    
+    <br /> <br />
     We believe that making (scientific) computing easier accessible promotes
     freedom and independence, and is an important step to make science
     more reproducable.
-
-
-.. raw:: html
-
+    
     </div></div></div>
-    </div> <!-- ex intro -->
+    </div> <!-- ex splash -->
     
     <div class="container">
     <div class="row">
