@@ -1,6 +1,18 @@
 
 .. title:: Zoof
 
+
+.. raw:: html
+
+    </div></div></div>
+    
+    <div class='intro'>
+    
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+
+
 .. container:: splash
 
     .. image:: _static/zooflogo220.png
@@ -8,17 +20,17 @@
     
     .. raw:: html
         
-        <!-- The briefest summary for Zoof --!>
+        <!-- The briefest summary for Zoof -->
         Zoof - download, run, start coding!
+        <br />
         <br />
         
         <!---
         <i class="fa fa-download"></i> Download &nbsp;&nbsp;
         <i class="fa fa-play-circle"></i> Run &nbsp;&nbsp;
         <i class="fa fa-child"></i> Coding!
-        --!>
+        -->
 
-----
 
 .. container:: purpose
     
@@ -29,21 +41,34 @@
     
     
     .. The summary for Zoof
+    
     The purpose of Zoof is to lower the barriers for (scientific)
     computing by providing a simple and intuitive IDE that promotes a
     powerful interactive workflow to use dynamic languages like Python.
-    Getting started is as easy, since Zoof can take care of
-    installing the programming language and additional packages.
+    Getting started is easy, since Zoof can take care of installing the
+    programming language and additional packages.
     
     We believe that making (scientific) computing easier accessible is
-    an important step to make science more reproducable, and has the
-    potential to empower people.
+    an important step to make science more reproducable, and promotes
+    freedom and independence.
+
+
+
+.. raw:: html
+
+    </div></div></div>
+    </div> <!-- ex intro -->
+    
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
 
 
 Features
 --------
 
-(These are the features that Zoof will have, but we are just starting, see below)
+
+(These are the features that Zoof *will* have, see status below)
 
 .. raw:: html
     
@@ -65,8 +90,8 @@ Features
     
     <div class="col-md-4 col-sm-6">
       <h4><i class="fa fa-refresh"></i> Highly interactive</h4>
-      Run code from file, cell or selected lines with a single key combi.
-      Powerful introspection tools like autocompletion, call tips,
+      Run code from file, cell or selected lines with a single key combination.
+      Make use of powerful introspection tools like autocompletion, call tips,
       interactive docs, and workspace. 
     </div>
     
@@ -111,21 +136,30 @@ Features
 Status 
 ------
 
-Zoof can be seen as the successor of `IEP <http://www.iep-project.org/>`_ and 
-`Pyzo <http://www.pyzo.org/>`_, combining the two projects into a single
-application. We start with a clean sheet and build Zoof up while trying
-to reuse as much code from the former projects as we can. You can see
-the progress at `our github repo <http://github.com/zoofIO/zoof/>`_. 
+Zoof is just getting started ...
 
-The design of Zoof will also be more modular than IEP, and we will come
-with a well-documented public API, so that it is easy to create
-extensions and contribute new features.
+Zoof can be seen as the successor of `IEP <http://www.iep-project.org/>`_ and 
+`Pyzo <http://www.pyzo.org/>`_. Although quite successful, it's time
+to move things to the next level. Zoof essentially combines the two projects
+in as single application. Further, we want to open up to other dynamic
+programming languages, and we want to make the user interface more
+intuitive and modern.
+
+We start with a clean sheet, allowing us to lay a strong foundation
+with a modular design, a well-documented public API, unit-tests, and
+approporate coding style. From there we include the pieces from IEP and
+Pyzo, while adapting them to the Zoof's design principles. Along the
+way, some functionality will be replaced by modern features (see below).
+With this approach we think that we can get Zoof ready to roll in a
+relative short amount of time, while achieving a healthy code-base for
+future development. You can see the progress at 
+`our github repo <http://github.com/zoofIO/zoof/>`_.
 
 
 Details
 -------
 
-This is the premise: To get started, download Zoof and start it up, set
+Here is the main idea of Zoof: Download Zoof and start it up, set
 up an environment with the language of your choice, and start coding.
 An intuitive interface will guide novel users through the process, and
 will provide tutorial materials if necessary. At the same time, the
@@ -133,8 +167,9 @@ interface does not get in the way and is powerful enough to support the
 workflow of advanced programmers.
 
 Zoof supports multiple progamming languages, focusing on dynamic
-languages (that support the interactve work flow of Zoof). At first we
-will focus on Python and Julia, and other languages can be added via
+languages (which support the interactve work flow of Zoof). At first we
+will focus on `Python <http://python.org/>`_ and 
+`Julia <http://julia-lang.org/>`_, and other languages can be added via
 an extension mechanism. Over time the languages that Zoof natively
 supports will be increased.
 
@@ -142,18 +177,61 @@ Like IEP, Zoof will be available in multiple (natural) languages. Let
 us know if you want to help with the translations!
 
 Zoof will probably support two ways to provide kernels. On the one hand
-we will piggy-back on the kernel mechanisms of project Jupyter (formerly
-IPython). On the other hand, we are developing protocols that are
-aimed to be easy to implement in any dynamic language, do not have much
-dependencies. Therefore, making Zoof work with a new language should
-be quite simple. Imagine building a toy language with LLVM and being
-able to target it from Zoof by spending one day implementinging a few
-simple protocols.
+we will piggy-back on the kernel mechanisms of 
+`project Jupyter <http://jupyter.org/>`_ (formerly IPython). On the
+other hand, we are developing protocols that are aimed to be easy to
+implement in any dynamic language, and have few dependencies.
+Therefore, making Zoof work with a new language should be quite simple.
+Imagine building a toy language with LLVM and being able to target it
+from Zoof by spending one day implementinging a few simple protocols.
 
 Zoof uses `Conda <http://conda.pydata.org/>`_ to spawn and manage new
-environments. This is already functional for Python. Via 
+environments. Conda already provides full-fledged support for several
+version of the Python programming language. Via 
 `Binstar <http://binstar.org/>`_ it will be straightforward to allow Zoof
 to spawn other languages as well.
+
+
+Testimonials
+------------
+
+Some encouraging `testimonials <http://www.iep-project.org/#testimonials>`_ from IEP
+and Pyzo:
+    
+.. raw:: html
+    
+    <i class='fa fa-quote-left fa-1x pull-left'></i>
+    This is fantastic IDE - exactly what I was looking for! 
+    <br /><br />
+    
+    <i class='fa fa-quote-left fa-1x pull-left'></i>
+    For quite a while now I’ve been looking for a way to switch from
+    Matlab to Python. The last remaining problem was a lack of descent
+    IDE for interactive work. I do a lot of short calculations, so a
+    ‘cell’ execution mode is crucial for me. Thanks again for a great
+    project! 
+    <br /><br />
+    
+    <i class='fa fa-quote-left fa-1x pull-left'></i>
+    I don’t even remember how I found IEP, so confused and desperate I
+    was testing [all available IDE’s] I could find. Installed it, and
+    10 minutes later I was coding, connecting with a glade created user
+    interface, and everything is running so well. I ain’t gonna change
+    now. IEP is my choice. Thank you very much, and keep up this amazing
+    work.
+    <br /><br />
+    
+    <i class='fa fa-quote-left fa-1x pull-left'></i>
+    What I like especially of iep is the plain and simple design of the
+    UI (a Qt feature :) while providing really powerful functionality.
+    Please, keep this project running.
+    <br /><br />
+    
+    <i class='fa fa-quote-left fa-1x pull-left'></i> 
+    It’s performing beautifully, the UI is very intuitive and stylish
+    (to my eyes anyway). [...] This is a very impressive app, on OSX
+    close to alpha dog status (I’ve used ALL the OSX alternatives). 
+    <br /><br />
 
 
 Modern features
@@ -168,10 +246,11 @@ for discussion:
   responsive even if your hard drive is busy. This is already implemented in
   IEP's file browser tool. This approach can later be extended to transparently
   map remote file systems (e.g. cloud computing).
-* No more tabs, only one file is "open" at a time. There is no concept of saving
-  or closing a file, yet the state of each file opened is preserved once you
-  re-open it, including the undo stack. Open/select a file by typing in a 
-  text field, which will smartky suggest recent files and files that match
+* No more tabs, only one file is "open" at a time. Begone with the
+  old-fashioned concept of unsaved files. Just edit each file directly.
+  The state of each file (cursos position, undo, etc.) is preserved once you
+  re-open it. Open/select a file by typing in a 
+  text field, which will smartly suggest recent files and files that match
   the part of the file name that you wrote. The idea is similar to
   Sublime's "open anything" and Zed's method for opening files. Don't
   worry, we will also include IEP's powerful file browser that has
@@ -182,28 +261,26 @@ for discussion:
   to whoch the required functionality applied.
 * A generic "tip" mechanism to guide novel users in using Zoof, that is easily
   put out of the way when (no longer) needed. Also give hints about
-  keyboard shortcuts to help users adopt an effective workflow.
-* A generic tooltip of sorts to provide extra information on menu items
-  and any kind of user-settable. This should help keep the UI simple
-  and consise while making it easy to get more information when needed. How the
-  infotmation is displayed is yet to be determined.
+  keyboard shortcuts to help users adopt an effective workflow. The
+  same system provides extra information on menu items and
+  user-settings. This should help keep the UI simple and clutter-free
+  while making it easy to get more information when needed.
 * Source structure tool (like IEP has) is shown in the editor itself and is
   only shown when ALT (or another key?) is pressed down. This should
   reduce clutter while still making it easy to get an overview of your
   code. Will need to see how this works out in practice though.
 * Concept of "pages". Much functionality is provided via pages that are
-
-  displayed in the area whereyour code is normally displayed. E.g.
+  displayed in the area where your code is normally displayed. E.g.
   configuration options can be accessed by selectig "zoof:config" as a
-  "file name". This reduced the amount of dialogs popping up, and makes
-  Zoof very extendable. Common pages can easily be loaded via a menu
+  "file name". This reduces the amount of dialogs popping up, and makes
+  Zoof very easy to extend. Common pages can easily be loaded via a menu
   option.
-* The start page (which can be accessed using a single click, provides a quick
-  way to common tasks, like launching and managing environments, etc.
+* The start page (which can be accessed using a single click) provides a quick
+  way to common tasks, like launching and managing environments.
 * Zoof will get an extension mechanism to make it easy to register extenstions
   that provide new pages, tools, and other functionality to customize Zoof
   to your needs.
-  
+
 
 .. toctree::
    :maxdepth: 2

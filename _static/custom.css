@@ -7,31 +7,47 @@ body {
     color: #073642;
 }
 
+
+.testimonials{
+    width: 70%;
+}
+
+/* ===== SPLASH ===== */
+
+.intro {
+    background-color: #002b36; /* 002b36 or 073642 */
+    margin: 0px;
+}
+
 div .splash {
     font-family: 'monospace';
     font-size: 120%;
     font-weight: bold;
     text-align: center;
+    color: #fff;
 }
 
 div .purpose {
     font-size: 120%;
-    font-style: italic;
+    font-styleee: italic;
+    padding: 1em;
+    color: #fff;
 }
 
+.col-md-12{
+    min-height:0px; /* avoid whitespace because we have an empty row */
+}
+
+
+/* ===== NAVBAR ===== */
 
 .navbar-default{
     background-color:#eee;
     border-color:#ccc;
+    /* to connect to splash */
+    border-radius: 0px;
+    margin-bottom: 0px;
 }
-
-/*
-.navbar-brand{
-    background-image: url('zooflogo64.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-*/
 
 .navbar-default .navbar-brand{
     color: #073642;
@@ -46,6 +62,8 @@ div .purpose {
     color: #268bd2;
 }
 
+
+/* ===== FOOTER ===== */
 
 footer {
   background-color: #eee;
