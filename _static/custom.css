@@ -12,6 +12,15 @@ body {
     width: 70%;
 }
 
+
+.pricing-table {
+    background-color: #eee;
+}
+
+.pricing-table td {
+    height: 1em;
+}
+
 /* ===== SPLASH ===== */
 
 

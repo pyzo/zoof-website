@@ -116,9 +116,8 @@ Features
     <div class="col-md-4 col-sm-6">
       <h4><i class="fa fa-heart"></i> Always free</h4>
       We believe that everyone should have access to good tools: Zoof is
-      free and always will be. The extra features in Zoof Plus are of
-      cosmetic nature, the free version has no restrictions in
-      functionality.
+      free and always will be. Whatever business model we will adopt, the
+      free version shall not have any restrictions in functionality.
     </div>
     
     </div>
