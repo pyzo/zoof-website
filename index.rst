@@ -44,7 +44,7 @@
     <br /> <br />
     We believe that making (scientific) computing easier accessible promotes
     freedom and independence, and is an important step to make science
-    more reproducable.
+    more reproducible.
     
     </div></div></div>
     </div> <!-- ex splash -->
@@ -151,7 +151,7 @@ Details
 
 Here is the main idea of Zoof: Download Zoof and start it up, set
 up an environment with the language of your choice, and start coding.
-An intuitive interface will guide novel users through the process, and
+An intuitive interface will guide novice users through the process, and
 will provide tutorial materials if necessary. At the same time, the
 interface does not get in the way and is powerful enough to support the
 workflow of advanced programmers.
@@ -238,7 +238,7 @@ for discussion:
   map remote file systems (e.g. cloud computing).
 * No more tabs, only one file is "open" at a time. Begone with the
   old-fashioned concept of unsaved files. Just edit each file directly.
-  The state of each file (cursos position, undo, etc.) is preserved once you
+  The state of each file (cursor position, undo, etc.) is preserved once you
   re-open it. Open/select a file by typing in a 
   text field, which will smartly suggest recent files and files that match
   the part of the file name that you wrote. The idea is similar to
@@ -248,7 +248,7 @@ for discussion:
 * No more menu bar. Each component of Zoof has its own small menu that only
   lists functionality specific to that component. Instead of searching for 
   functionality in the global menu, you simply select the menu of the component
-  to whoch the required functionality applied.
+  to which the required functionality applied.
 * A generic "tip" mechanism to guide novel users in using Zoof, that is easily
   put out of the way when (no longer) needed. Also give hints about
   keyboard shortcuts to help users adopt an effective workflow. The
