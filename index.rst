@@ -54,6 +54,39 @@
     <div class="col-md-12">
 
 
+Purpose
+-------
+
+Since most dynamic languages are easy to learn, they are well-suited
+for education. Similarly, their interactive workflow provides many
+`benefits <http://www.almarklein.org/why_dynamic.html>`_ for data analysis. 
+This is propably why dynamic programming languages are becoming
+`increasingly popular <http://news.techworld.com/applications/3529457/python-bumps-off-java-as-top-learning-language/>`_ . For instance the 
+`Scientific Python <http://scipy.org/>`_ ecosystem is blooming and
+provides powerful tools for science and data exploration. Exciting
+development like
+`LLVM <http://llvm.org/>`_, `Pypy <http://pypy.org/>`_, 
+`Julia <http://julialang.org/>`_, `Kivy <http://kivy.org/>`_,
+`ASM.js <http://asmjs.org/>`_ 
+demonstrate that dynamic languages can be nearly as fast as compiled
+languages. 
+
+All these tools are open source and free for anyone to use. So, whether
+you're a high-school kid who wants to create a game, a scientist who
+wants to process some data, or anything in between, the tools you need
+are probably there ...
+
+However, newcomers often don't know where to start, and the development
+environments that most developers use are not well suited for beginners.
+Zoof aims to reduce these obstacles by making it as easy as possible
+to get access to the tools, and provides an intuitive environment to
+use them.
+
+We believe that the art of writing software can (and should) be a much
+more common skill. Many exciting tools already exist; with Zoof we bring
+them to a wide audience.
+
+
 Features
 --------
 
@@ -144,6 +177,11 @@ With this approach we think that we can get Zoof ready to roll in a
 relative short amount of time, while achieving a healthy code-base for
 future development. You can see the progress at 
 `our github repo <http://github.com/zoofIO/zoof/>`_.
+
+We're currently talking to a party who will probably provide funding
+for the development of Zoof. The real development is going to start in 
+Januari 2015. If you would like to participate in any way, please contact 
+`me <http://almarklein.org/>`_.
 
 
 Details
