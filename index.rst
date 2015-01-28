@@ -153,6 +153,12 @@ Features
       free version shall not have any restrictions in functionality.
     </div>
     
+    <div class="col-md-4 col-sm-6">
+      <h4><i class="fa fa-cloud"></i> Web-enabled</h4>
+      Zoof is build using web technologies, and can be hosted as a
+      web-application to e.g. drive a cloud computing platform.
+    </div>
+    
     </div>
 
 
@@ -178,9 +184,11 @@ relative short amount of time, while achieving a healthy code-base for
 future development. You can see the progress at 
 `our github repo <http://github.com/zoofIO/zoof/>`_.
 
-We're currently talking to a party who will probably provide funding
-for the development of Zoof. The real development is going to start in 
-Januari 2015. If you would like to participate in any way, please contact 
+Since Januari 2015 we are actively developing Zoof. The first step is
+developing a web-based GUI toolkit, which will form the basis for Zoof's
+UI.
+
+If you would like to participate in any way, please contact 
 `me <http://almarklein.org/>`_.
 
 
@@ -251,7 +259,7 @@ and Pyzo:
     
     <i class='fa fa-quote-left fa-1x pull-left'></i>
     What I like especially of iep is the plain and simple design of the
-    UI (a Qt feature :) while providing really powerful functionality.
+    UI [...] while providing really powerful functionality.
     Please, keep this project running.
     <br /><br />
     
