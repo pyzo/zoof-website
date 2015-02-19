@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="phosphor-ui.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="phosphor-core.js"></script>
+  <script type="text/javascript" src="phosphor-ui.js"></script>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f6f7;
+}
+#main {
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid #000;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+#main > .p-Widget {
+  padding: 8px;
+}
+.red {
+  padding: 8px;
+  background: #e74c3c;
+}
+.yellow {
+  padding: 8px;
+  background: #f1c40f;
+}
+.green {
+  padding: 8px;
+  background: #27ae60;
+}
+.blue {
+  padding: 8px;
+  background: #3498db;
+}
+.content {
+  text-align: center;
+  font: 15px Helvetica;
+  background: linear-gradient(180deg, #eee 0%, #ccc 100%);
+  box-shadow: inset 1px 1px 0px rgba(255,255,255,0.15), inset -1px -1px 0px rgba(0,0,0,0.3);
+}
+.content > span {
+  line-height: 25px;
+}
+    
+</style>
+
+
+<script>
+    var example;
+(function (example) {
+    'use strict';
+    var BoxLayout = phosphor.ui.boxlayout.BoxLayout;
+    var Direction = phosphor.ui.enums.Direction;
+    var Widget = phosphor.ui.widget.Widget;
+    var measureTextWidth = phosphor.ui.domutil.measureTextWidth;
+    function createContentWidget(text) {
+        var w = new Widget();
+        w.classList.add('content');
+        w.minHeight = 25;
+        w.maxHeight = 25;
+        w.minWidth = measureTextWidth(text, '15px Helvetica') + 12;
+        w.node.innerHTML = '<span>' + text + '</span>';
+        return w;
+    }
+    function main() {
+        var w, hbox, vbox, vbox1, vbox2;
+                
+        hbox = new BoxLayout(1 /* left to right */);
+        hbox.addWidget(createContentWidget('BoxA'), 0);
+        hbox.addWidget(createContentWidget('BoxB'), 0);
+        hbox.addWidget(createContentWidget('Box C is a bit longer'), 0);
+        w = new Widget();
+        w.layout = hbox;
+            
+        w.attach(document.getElementById('main'));
+        w.fitToHost();
+        window.onresize = function () { return w.fitToHost(); };
+    }
+    window.onload = main;
+})(example || (example = {})); // module example
+
+</script>
+</head>
+<body>
+  <div id="main"></div>
+
+
+<div id='fps' style='position:fixed; top:0px; left:0px; width:80px; height:20px; background:#afa;'> fps</div>
+<script>
+var timer = {
+    tail: 50,  // how many samples to take a measurement on
+    showinterval: 1000,  // each x ms show the fps in the log
+    elapsed: [],
+    lastshow: 0,
+    tick: function (now) {
+        this.elapsed.push(now);
+        this.elapsed = this.elapsed.slice(-this.tail);
+        if (now - this.lastshow > this.showinterval) {
+            this.lastshow = now;
+            var elapsed = (now - (this.elapsed[0] || now)) / 1000;
+            var fps = Math.round(this.elapsed.length / elapsed);
+            //console.log(fps);
+            document.getElementById('fps').innerHTML = fps + ' FPS';
+        }
+    },
+    start: function (now) {
+        requestAnimationFrame(timer.start);        
+        timer.tick(now);
+    }    
+};
+timer.start()    
+</script>
+    
+</body>
+</html>
