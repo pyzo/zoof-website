@@ -107,6 +107,7 @@ body {
         w.layout = hbox;
         vbox.addWidget(w, 2);
         
+        // ------
         vbox2 = new BoxLayout(2 /* left to right */);
         vbox = vbox2;
         
@@ -121,7 +122,7 @@ body {
         hbox = new BoxLayout(1 /* left to right */);
         hbox.addWidget(createContentWidget('BoxA'), 1);
         hbox.addWidget(createContentWidget('BoxB'), 1);
-        hbox.addWidget(createContentWidget('Box C is a bit longer'), 1);
+        hbox.addWidget(createContentWidget('Box C is a bit longer and <br /> has more lines and an img <br /> <img src="http://zoof.io/_static/zooflogo220.png" height="50" />'), 1);
         w = new Widget();
         w.layout = hbox;
         vbox.addWidget(w, 0);
@@ -179,7 +180,7 @@ var timer = {
             var elapsed = (now - (this.elapsed[0] || now)) / 1000;
             var fps = Math.round(this.elapsed.length / elapsed);
             //console.log(fps);
-            document.getElementById('fps').innerHTML = fps + ' FPS';
+            document.getElementById('fps').innerHTML = fps + ' FPS (P)';
         }
     },
     start: function (now) {

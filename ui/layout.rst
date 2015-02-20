@@ -8,6 +8,12 @@ A form layout can also be convenient. For more control there is a grid,
 and for more flexibility there is PinBoard layout.
 
 .. note::
+    The layout method currently being used relies on tables. Some tests
+    have shown that the current implementation only works reliable on
+    Firefox. Also, the use of Tables is slow, and we should probably
+    be using flexbox.
+
+.. note::
     These examples are all working code. When building the docs, the
     Python code of the examples is executed and the resulting app is
     exported to a standalone html file. These html files are displayed

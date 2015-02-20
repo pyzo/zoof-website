@@ -73,9 +73,9 @@ body {
         var w, hbox, vbox, vbox1, vbox2;
                 
         hbox = new BoxLayout(1 /* left to right */);
-        hbox.addWidget(createContentWidget('BoxA'), 0);
+        hbox.addWidget(createContentWidget('BoxA'), 1);
         hbox.addWidget(createContentWidget('BoxB'), 0);
-        hbox.addWidget(createContentWidget('Box C is a bit longer'), 0);
+        hbox.addWidget(createContentWidget('Box C is a bit longer'), 2);
         w = new Widget();
         w.layout = hbox;
             
@@ -107,7 +107,7 @@ var timer = {
             var elapsed = (now - (this.elapsed[0] || now)) / 1000;
             var fps = Math.round(this.elapsed.length / elapsed);
             //console.log(fps);
-            document.getElementById('fps').innerHTML = fps + ' FPS';
+            document.getElementById('fps').innerHTML = fps + ' FPS (P)';
         }
     },
     start: function (now) {

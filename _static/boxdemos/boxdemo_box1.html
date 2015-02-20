@@ -14,7 +14,7 @@ body {
     margin: 0px;
 }
 
-.vbox, .hbox {
+body > .hbox, body > .vbox {
     height: 100%;
     width: 100%;
 }
@@ -27,7 +27,7 @@ body {
     display: -webkit-box;
     display: -moz-box;    
     display: box;
-        
+    
     -webkit-box-align: stretch;
     -moz-box-align: stretch;
     box-align: stretch;
@@ -43,14 +43,14 @@ body {
     -webkit-box-orient: horizontal;
     -moz-box-orient: horizontal;
     box-orient: horizontal;
-    /*border: 1px dashed #44e;/**/    
+    border: 1px dashed #44e;/**/    
 }
 .vbox {
     /*flex-flow: column; */
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     box-orient: vertical;
-    /*border: 1px dashed #e44;/**/    
+    border: 1px dashed #e44;/**/    
 }
 
 div {
@@ -71,28 +71,25 @@ div {
     -moz-box-flex: 1;
     box-flex: 1;
 }
-
+    
 .hbox > div {
-    height: 100%;
-    width: 100%;
     margin: 0px;
 }
  .vbox > div {
-    width: 100%;
     margin: 0px;
 }
     
-.flex0 {
+.hbox > .flex0, .vbox > .flex0 {
     -webkit-box-flex: 0;
     -moz-box-flex: 0;
     box-flex: 0;
 }
-.flex1 {
+.hbox > .flex1, .vbox > .flex1 {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     box-flex: 1;
 }
-.flex2 {
+.hbox > .flex2, .vbox > .flex2 {
     -webkit-box-flex: 2;
     -moz-box-flex: 2;
     box-flex: 2;
@@ -105,9 +102,9 @@ div {
 
 
 <div class='hbox flex1'>
-  <div class='child flex0'>Box A</div>
+  <div class='child flex1'>Box A</div>
   <div class='child flex0'>Box B</div>
-  <div class='child flex0'>Box C is a bit longer</div> 
+  <div class='child flex2'>Box C is a bit longer</div> 
 </div>
 
 
@@ -126,7 +123,7 @@ var timer = {
             var elapsed = (now - (this.elapsed[0] || now)) / 1000;
             var fps = Math.round(this.elapsed.length / elapsed);
             //console.log(fps);
-            document.getElementById('fps').innerHTML = fps + ' FPS';
+            document.getElementById('fps').innerHTML = fps + ' FPS (B)';
         }
     },
     start: function (now) {
