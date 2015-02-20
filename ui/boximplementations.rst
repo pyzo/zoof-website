@@ -155,8 +155,9 @@ Pi.
 
 The Phosphor method (using JS) seems to not work as expected. Maybe I
 am using it wrong (there's not a lot of docs yet), but I also suspect
-its just not finished yet. One thing that I am worried about with this
+the code is simply not finished yet. One thing that I am worried about with this
 approach is that although the optimal/minumum width of a widget can be
-calculated from the text, I wonder it its possible to do so for the
+calculated from the text (using a canvas), I wonder it its possible to do so for the
 height. The widget that includes multiple lines and an image fails for
-this method.
+this method right now, and I wonder if that's something that's event possible
+to get right with this approach.
