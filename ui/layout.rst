@@ -7,11 +7,6 @@ common is to align things horizonaltally or vertically using a box layout.
 A form layout can also be convenient. For more control there is a grid,
 and for more flexibility there is PinBoard layout.
 
-.. note::
-    The layout method currently being used relies on tables. Some tests
-    have shown that the current implementation only works reliable on
-    Firefox. Also, the use of Tables is slow, and we should probably
-    be using flexbox.
 
 .. note::
     These examples are all working code. When building the docs, the

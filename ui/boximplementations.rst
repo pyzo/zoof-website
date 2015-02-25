@@ -105,21 +105,21 @@ I do more tests.
     </tr><tr>
     <td class='browser'>Firefox 35:</td> <td>Ok (1FPS)</td> <td>Ok (20FPS)</td> <td>Ok (10FPS)</td> <td>Ok (3FPS)</td>
     </tr><tr>
-    <td class='browser'>Chromium 40:</td> <td>Fail (4FPS)</td> <td>Ok (45FPS)</td> <td>Ok (40FPS)</td> <td>Ok (45FPS)</td>
+    <td class='browser'>Chromium 40:</td> <td>Ok (28FPS)</td> <td>Ok (45FPS)</td> <td>Ok (40FPS)</td> <td>Ok (45FPS)</td>
     </tr><tr>
-    <td class='browser'>Qt Webkit:</td> <td>Fail</td> <td>Ok </td> <td>Ok </td> <td>Fail</td>
+    <td class='browser'>Qt Webkit:</td> <td>Ok</td> <td>Ok </td> <td>Ok </td> <td>Fail</td>
     </tr><tr>
     
-    <td class='browser'>Iceweasel (RaspPI):</td> <td>Fail</td> <td>Ok </td> <td>Ok </td> <td>Ok</td>
+    <td class='browser'>Iceweasel (RaspPI):</td> <td>Ok</td> <td>Ok </td> <td>Ok </td> <td>Ok</td>
     </tr><tr>
-    <td class='browser'>Ephiphany (RaspPI):</td> <td>Fail</td> <td>Ok </td> <td>Ok </td> <td>Ok</td>
+    <td class='browser'>Ephiphany (RaspPI):</td> <td>Ok</td> <td>Ok </td> <td>Ok </td> <td>Ok</td>
     </tr><tr>
-    <td class='browser'>Chromium (RaspPI):</td> <td>Fail</td> <td>Ok </td> <td>Ok </td> <td>Fail</td>
+    <td class='browser'>Chromium (RaspPI):</td> <td>Ok</td> <td>Ok </td> <td>Ok </td> <td>Fail</td>
     </tr><tr>
     
     <td class='browser'>Firefox (mobile):</td> <td>Ok</td> <td>Ok </td> <td>Ok </td> <td>Ok</td>
     </tr><tr>
-    <td class='browser'>Standard Android (mobile):</td> <td>Fail</td> <td>Ok </td> <td>Fail </td> <td>Fail</td>
+    <td class='browser'>Standard Android (mobile):</td> <td>Ok </td> <td>Ok </td> <td>Fail </td> <td>Fail</td>
     </tr><tr>
     
     <td class='browser'>IE 9:</td> <td>Fail</td> <td>Fail</td> <td>Fail</td> <td>Fail</td>
@@ -132,8 +132,6 @@ I do more tests.
 
 Notes:
 
-* I developed the table-method with Firefox, I'm pretty sure it can be made to work
-  with other browsers.
 * On QtWebkit, the FPS measurement did not work. Both Box and Flex seemed smooth though.
 * Chrome does not resize the content until you release the mouse. I used developer mode
   to resize, but then you can only resize either width or height.
