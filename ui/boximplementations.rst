@@ -18,10 +18,12 @@ The implementations
 Table
 -----
 
-The curren ``zoof.ui`` implements hbox and vbox using a table. The
-advantage is that the html table can already do much of the layout,
+In the old days, a table was used for many layout tasks.
+The advantage is that the html table can already do much of the layout,
 especially for the horizontal direction. In the vertical direction it
-needs some help with a bit of JS.
+needs some help with a bit of JS. Another potential advantage is that
+a table or form layout can share much of the code. However, the tests 
+have shown that this approach performs pretty bad.
 
 
 Box
@@ -36,7 +38,7 @@ Flex
 This is the ``display: flex`` model, which supsersedes the ``display:
 box``. It is the latest iteration of the flexbox model (http://www.w3.org/TR/css-flexbox-1/).
 At the time of writing it is still in draft though. However, with the right CSS
-(e.g. ``-moz-flex``, ``-ms-flex``, etc.) it may work well. 
+(e.g. ``-moz-flex``, ``-ms-flex``, etc.) it work very well. 
 
 
 Phosphor
@@ -141,21 +143,15 @@ Notes:
 Conclusions
 ===========
 
-I was unpleasantly surprised by the horrible performance of the
-table-based method. I suppose you should just avoid that. 
+I was surprised by the horrible performance of the table-based method.
+I suppose you should just avoid that.
 
 It's good to see that the Box method is so well supported. It's sort
 of deprecated though, so I want to avoid it. After getting the CSS right
 with the Flex method (you have to be consistent with the '-webkit',
-'-moz', '-ms' prefixes), I was pleasantly surprised to see it working
-on a wide range of browsers, inluding those running on the Raspberry
-Pi.
+'-moz', '-ms' prefixes), it was working on a wide range of browsers,
+inluding those running on the Raspberry Pi.
 
-The Phosphor method (using JS) seems to not work as expected. Maybe I
-am using it wrong (there's not a lot of docs yet), but I also suspect
-the code is simply not finished yet. One thing that I am worried about with this
-approach is that although the optimal/minumum width of a widget can be
-calculated from the text (using a canvas), I wonder it its possible to do so for the
-height. The widget that includes multiple lines and an image fails for
-this method right now, and I wonder if that's something that's event possible
-to get right with this approach.
+The Phosphor method (using JS) seems to not work as expected. Probably I
+am using it wrong (there's not a lot of docs yet), and the project is also 
+in development.
