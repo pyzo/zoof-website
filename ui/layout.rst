@@ -128,15 +128,15 @@ widgets are organized.
                 
                 ui.Label(text='margin 10 (around layout)')
                 with ui.HBox(flex=0, margin=10):
-                    self.b1 = ui.Button(text='Hola')
-                    self.b2 = ui.Button(text='Hello world')
-                    self.b3 = ui.Button(text='Foo bar')
+                    self.b1 = ui.Button(text='Hola', flex=1)
+                    self.b2 = ui.Button(text='Hello world', flex=1)
+                    self.b3 = ui.Button(text='Foo bar', flex=1)
                 
                 ui.Label(text='spacing 10 (inter-widget)')
                 with ui.HBox(flex=0, spacing=10):
-                    self.b1 = ui.Button(text='Hola')
-                    self.b2 = ui.Button(text='Hello world')
-                    self.b3 = ui.Button(text='Foo bar')
+                    self.b1 = ui.Button(text='Hola', flex=1)
+                    self.b2 = ui.Button(text='Hello world', flex=1)
+                    self.b3 = ui.Button(text='Foo bar', flex=1)
                 
                 ui.Widget(flex=1)
                 ui.Label(text='Note the spacer Widget above')
