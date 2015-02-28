@@ -223,6 +223,27 @@ position (i.e. as in a percentage of the parent size).
                 self.b2 = ui.Button(text='Dynamic at (20%, 20%)', pos=(0.2, 0.2))
                 self.b3 = ui.Button(text='Dynamic at (50%, 70%)', pos=(0.5, 0.7))
 
-.. raw:: html
 
+
+HSplit
+------
+
+The HSplit horizontally splits the available space in regions, which
+size can be set by the user by dragging the divider.
+
+At the moment, the splitter can only have two children, but eventually,
+it will be able to hold any number of children.
+
+.. UIExample:: 300
+    
+    from zoof import ui
+    
+    class MyApp(ui.App):
+        def init(self):
+            with ui.HSplit(self):
+                self.b1 = ui.Button(text='At the left')
+                self.b2 = ui.Button(text='At the right')
+
+.. raw:: html
+    <!-- Some exta space to allow easy resizing of the last example -->
     <br /><br /><br /><br /><br />
