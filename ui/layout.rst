@@ -244,6 +244,25 @@ it will be able to hold any number of children.
                 self.b1 = ui.Button(text='At the left')
                 self.b2 = ui.Button(text='At the right')
 
+Let's make it more interesting, a splitter inside a HBox, where the splitter has
+a button on the left and a hbox on the right:
+
+
+.. UIExample:: 300
+    
+    from zoof import ui
+    
+    class MyApp(ui.App):
+        def init(self):
+            with ui.HBox(self):
+                ui.Button(text='Button in hbox', flex=1)
+                with ui.HSplit(flex=2):
+                    ui.Button(text='Button in splitter')
+                    with ui.HBox():
+                        ui.Button(text='Right A', flex=0)
+                        ui.Button(text='Right B', flex=1)
+                        ui.Button(text='Right C', flex=2)
+
 .. raw:: html
     <!-- Some exta space to allow easy resizing of the last example -->
     <br /><br /><br /><br /><br />
