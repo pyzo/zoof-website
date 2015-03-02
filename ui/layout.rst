@@ -229,10 +229,11 @@ HSplit
 ------
 
 The HSplit horizontally splits the available space in regions, which
-size can be set by the user by dragging the divider.
+size can be set by the user by dragging the divider. A splitter is not
+aware of the natural size of its content, but it does take the minimum
+size of its children into account (and a splitter sets its own minimum size
+as the combined minimum size of its children plus a little extra).
 
-At the moment, the splitter can only have two children, but eventually,
-it will be able to hold any number of children.
 
 .. UIExample:: 300
     
@@ -241,8 +242,9 @@ it will be able to hold any number of children.
     class MyApp(ui.App):
         def init(self):
             with ui.HSplit(self):
-                self.b1 = ui.Button(text='At the left')
-                self.b2 = ui.Button(text='At the right')
+                ui.Button(text='Right A', minWidth=120)
+                ui.Button(text='Right B', minWidth=70)
+                ui.Button(text='Right C')
 
 Let's make it more interesting, a splitter inside a HBox, where the splitter has
 a button on the left and a hbox on the right:
@@ -255,9 +257,9 @@ a button on the left and a hbox on the right:
     class MyApp(ui.App):
         def init(self):
             with ui.HBox(self):
-                ui.Button(text='Button in hbox', flex=1)
+                ui.Button(text='Button in hbox', flex=0, minWidth=110)
                 with ui.HSplit(flex=2):
-                    ui.Button(text='Button in splitter')
+                    ui.Button(text='Button in hsplit', minWidth=110)
                     with ui.HBox():
                         ui.Button(text='Right A', flex=0)
                         ui.Button(text='Right B', flex=1)
