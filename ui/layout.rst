@@ -44,7 +44,9 @@ HBox and VBox
 
 With the `HBox` class, you can layout widgets horizontally. Note the use of
 the flex argument. It determines how the widget is stretched. A flex of 0
-means to not stretch, but use the minimal sensible width.
+means to not stretch, but use the minumum sensible width. This is either
+the manually set min-width, or the browser-computed natural width,
+whichever is largest.
 
 .. UIExample:: 100
     from zoof import ui
@@ -229,11 +231,11 @@ HSplit
 ------
 
 The HSplit horizontally splits the available space in regions, which
-size can be set by the user by dragging the divider. A splitter is not
-aware of the natural size of its content, but it does take the minimum
-size of its children into account (and a splitter sets its own minimum size
-as the combined minimum size of its children plus a little extra).
-
+size can be set by the user by dragging the divider. Unlike an HBox or
+VBox, a splitter is not aware of the natural size of its content, and
+only takes the minimum size of its children into account. A splitter
+sets its own minimum size as the combined minimum size of its children
+(plus a little extra).
 
 .. UIExample:: 300
     
